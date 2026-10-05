@@ -1,0 +1,9 @@
+{
+  "date": "2026-10-06T02:15:26.044190",
+  "production": "/var/www/html",
+  "sha256": {
+    "index.html": "cbe8be4868c727c209d058285916c49dc08eca31570fcfb5605ee978ededf363",
+    "styles.css": "1f3a52093231b1b5c17a73f93fac8f4c872068029c79554bc70e4549d96e4b29",
+    "script.js": "7988e3c509e97fdeb5189af78ecbd6fc431fabf0f1a2ce0b37d0da77d57c1d56"
+  }
+}
