@@ -1,0 +1,81 @@
+/* Custom typography and micro-interactions for Valiev Orchards */
+
+:root {
+  --color-pine: #14281D;
+  --color-forest: #1E3A2B;
+  --color-sage: #4C6E58;
+  --color-amber: #D99127;
+  --color-ruby: #9E2A2B;
+  --color-cream: #FAF7F2;
+  --color-linen: #F3EFE6;
+}
+
+/* Subtle organic background tint */
+body {
+  background-color: var(--color-cream);
+  color: var(--color-pine);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-cream);
+}
+::-webkit-scrollbar-thumb {
+  background: #c7c0b5;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-sage);
+}
+
+/* Active filter tabs */
+.active-filter {
+  background-color: var(--color-pine) !important;
+  color: #FAF7F2 !important;
+  border-color: var(--color-pine) !important;
+}
+
+.active-filter svg {
+  color: #FAF7F2 !important;
+  stroke: #FAF7F2 !important;
+}
+
+/* Active Box Button */
+.active-box-btn {
+  background-color: #FAF7F2 !important;
+  border-color: var(--color-forest) !important;
+  border-width: 2px !important;
+  box-shadow: 0 4px 12px rgba(20, 40, 29, 0.08) !important;
+}
+
+/* Smooth transition for product cards */
+.product-card {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Animation utilities */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  animation: fadeIn 0.4s ease forwards;
+}
+
+/* Disable sticky header on mobile screens (< 768px) */
+@media (max-width: 767px) {
+  header {
+    position: relative !important;
+    top: auto !important;
+  }
+}
